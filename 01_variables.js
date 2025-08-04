@@ -1,13 +1,13 @@
 const accountId = 144553
 let accountEmail = "career@sauravswaraj.com"
-var accountPassword = "Saurav@123"
+var accountPassword = "1234"
 accountCity = "South West Delhi"
 let accountState;
 
 //  accountId = 2  // not allowed, const cannot be reassigned
 
 accountEmail = "sauravswarajj@gmail.com"
-accountPassword = "Saurav@1234"
+accountPassword = "12345"
 accountCity = "Najafgarh"
 
 console.log(accountId);
