@@ -39,3 +39,31 @@ const myFunction = function() { // Function
 // console.log(typeof score); // number
 
 // https://262.ecma-international.org/5.1/#sec—11.4.3
+
+
+// ******************************************* Memory **************************************************************************************
+
+// Stack Memory (Primitive Data Types)  => if stack memory is used then we will get a copy of the value
+
+let myYoutubename = "sauravdotcom"; // Stack Memory
+
+let anothername = myYoutubename; // Stack Memory, anothername is a copy of myYoutubename
+anothername = "swaraj"
+
+// console.log(myYoutubename); // "sauravdotcom", original value is not changed
+// console.log(anothername); // "swaraj", anothername is changed
+
+
+// Heap Memory (Non-Primitive Data Types) => if heap memory is used then we will get a reference to the value(We will get reference of the original value)
+
+let userOne = {
+    email : "saurav@google.com",
+    upi : "saurav@upi"
+}
+
+let userTwo = userOne; // Heap Memory, userTwo is a reference to userOne
+
+userTwo.email = "swaraj@gmail.com"; // Changing the email in userTwo will also change it in userOne
+
+console.log(userOne.email); // swaraj@gmail.com , both value will be same 
+console.log(userTwo.email); // swaraj@gmail.com , both value will be same
