@@ -51,4 +51,62 @@ if(!userName){ // This checks if userName is falsy (undefined, null, etc.)  and 
 }
 
 // console.log(loginUserMessage()); // it will show above message with undefined value
-console.log(loginUserMessage("Saurav")); // Saurav
+// console.log(loginUserMessage("Saurav")); // Saurav
+
+
+
+// function calculateCartPrice(num1) {
+//     return num1;
+// }
+
+// console.log(calculateCartPrice(2));
+
+
+// function calculateCartPrice(...num1) { // rest operator allows us to pass any number of arguments, it is also know as spread operator but in this case it is rest operator
+//     return num1;
+// }
+
+// console.log(calculateCartPrice(200, 400, 500));
+
+
+function calculateCartPrice(val1, val2, ...num1) { 
+    return num1;
+}
+
+// console.log(calculateCartPrice(200, 400, 500, 2000));
+
+
+const user = {
+    name: "Saurav",
+    price: 199
+}
+
+function handleObject(anyObject){
+    // console.log(`Name is: ${anyObject.name} and price is: ${anyObject.price}`);
+    
+}
+
+// handleObject(user); // Name is: Saurav and price is: 199
+
+handleObject({
+    name: "Swaraj",
+    price: 299
+})
+
+const myNewArray = [200, 400, 100, 600]
+
+function returnSecondValue(getArray){
+    return getArray[1]; // This will return the second value of the array
+}
+
+// console.log(returnSecondValue(myNewArray)); // 400
+console.log(returnSecondValue([200, 300, 500, 1000])); // 400
+
+
+
+
+
+
+
+
+//               node .\03_basics\01_functions.js
